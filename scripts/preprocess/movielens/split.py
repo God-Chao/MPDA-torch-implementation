@@ -65,8 +65,6 @@ def main():
     print('all users has been splitted!')
     
 
-
-
 if __name__ == '__main__':
     # 将每个用户的seq文件按时间戳划分训练集和测试集
     print(f'start split train and test data for all users')

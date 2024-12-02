@@ -1,0 +1,6 @@
+# 全局变量配置
+home_path: '/home/chao/workspace/MPDA-implementation'
+timestamp: 1225642324
+random_seed: 24
+num_task: 10
+num_recall_item_pairs: 50

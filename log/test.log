@@ -1,0 +1,459 @@
+nohup: ignoring input
+test users have been loaded, len = 6
+test users = ['18' '82' '208' '220' '258' '271']
+[2024-12-02 14:37:19.530087] start test user 18 0/6
+test.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:37:21.005643] start test user 18 0/6 recall augumented users by random, augumented_users = [82210, 118928, 129503, 86348, 126739, 85782, 138311, 42208, 130932, 37274, 88029, 116427, 114121, 96038, 136168, 134929, 115033, 111586, 99081, 83095]
+[2024-12-02 14:37:21.059875] user = 18 Cloud 0/6
+[2024-12-02 14:37:25.918352] user = 18 Local 0/6
+[2024-12-02 14:37:26.371411] user = 18 Local+ 0/6
+test.py:115: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:37:27.779917] user = 18 MPDA- 0/6
+test.py:126: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+test.py:131: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  current_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+Initial AUC: 0.623688155922039
+Training on enhanced user 82210 0/20 current_auc = 0.623688155922039
+User 82210 AUC after training: 0.623688155922039
+User 82210 does not improve AUC. Reverting changes.
+Training on enhanced user 118928 1/20 current_auc = 0.623688155922039
+User 118928 AUC after training: 0.6221889055472264
+User 118928 does not improve AUC. Reverting changes.
+Training on enhanced user 129503 2/20 current_auc = 0.623688155922039
+User 129503 AUC after training: 0.623688155922039
+User 129503 does not improve AUC. Reverting changes.
+Training on enhanced user 86348 3/20 current_auc = 0.623688155922039
+User 86348 AUC after training: 0.6221889055472264
+User 86348 does not improve AUC. Reverting changes.
+Training on enhanced user 126739 4/20 current_auc = 0.623688155922039
+User 126739 AUC after training: 0.6251874062968515
+User 126739 improves AUC. Keeping the model.
+Training on enhanced user 85782 5/20 current_auc = 0.6251874062968515
+User 85782 AUC after training: 0.6221889055472264
+User 85782 does not improve AUC. Reverting changes.
+Training on enhanced user 138311 6/20 current_auc = 0.6251874062968515
+User 138311 AUC after training: 0.6251874062968515
+User 138311 does not improve AUC. Reverting changes.
+Training on enhanced user 42208 7/20 current_auc = 0.6251874062968515
+User 42208 AUC after training: 0.6221889055472264
+User 42208 does not improve AUC. Reverting changes.
+Training on enhanced user 130932 8/20 current_auc = 0.6251874062968515
+User 130932 AUC after training: 0.6221889055472264
+User 130932 does not improve AUC. Reverting changes.
+Training on enhanced user 37274 9/20 current_auc = 0.6251874062968515
+User 37274 AUC after training: 0.6251874062968515
+User 37274 does not improve AUC. Reverting changes.
+Training on enhanced user 88029 10/20 current_auc = 0.6251874062968515
+User 88029 AUC after training: 0.6251874062968515
+User 88029 does not improve AUC. Reverting changes.
+Training on enhanced user 116427 11/20 current_auc = 0.6251874062968515
+User 116427 AUC after training: 0.623688155922039
+User 116427 does not improve AUC. Reverting changes.
+Training on enhanced user 114121 12/20 current_auc = 0.6251874062968515
+User 114121 AUC after training: 0.6206896551724138
+User 114121 does not improve AUC. Reverting changes.
+Training on enhanced user 96038 13/20 current_auc = 0.6251874062968515
+User 96038 AUC after training: 0.6251874062968515
+User 96038 does not improve AUC. Reverting changes.
+Training on enhanced user 136168 14/20 current_auc = 0.6251874062968515
+User 136168 AUC after training: 0.623688155922039
+User 136168 does not improve AUC. Reverting changes.
+Training on enhanced user 134929 15/20 current_auc = 0.6251874062968515
+User 134929 AUC after training: 0.6176911544227885
+User 134929 does not improve AUC. Reverting changes.
+Training on enhanced user 115033 16/20 current_auc = 0.6251874062968515
+User 115033 AUC after training: 0.6221889055472264
+User 115033 does not improve AUC. Reverting changes.
+Training on enhanced user 111586 17/20 current_auc = 0.6251874062968515
+User 111586 AUC after training: 0.6221889055472264
+User 111586 does not improve AUC. Reverting changes.
+Training on enhanced user 99081 18/20 current_auc = 0.6251874062968515
+User 99081 AUC after training: 0.6251874062968515
+User 99081 does not improve AUC. Reverting changes.
+Training on enhanced user 83095 19/20 current_auc = 0.6251874062968515
+User 83095 AUC after training: 0.6251874062968515
+User 83095 does not improve AUC. Reverting changes.
+文件已保存为 /home/chao/workspace/MPDA-implementation/log/transfer_movielens_ncf_50_random/2.xlsx
+[2024-12-02 14:37:40.981846] start test user 82 1/6
+test.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:37:41.590130] start test user 82 1/6 recall augumented users by random, augumented_users = [120555, 22888, 50293, 116785, 136521, 23286, 83318, 8530, 32591, 76734, 16492, 119583, 37476, 35809, 12629, 124045, 101565, 13985, 22575, 80909]
+[2024-12-02 14:37:41.604377] user = 82 Cloud 1/6
+[2024-12-02 14:37:41.882421] user = 82 Local 1/6
+[2024-12-02 14:37:42.099653] user = 82 Local+ 1/6
+test.py:115: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:37:44.481972] user = 82 MPDA- 1/6
+test.py:126: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+test.py:131: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  current_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+Initial AUC: 0.7537447765991643
+Training on enhanced user 120555 0/20 current_auc = 0.7537447765991643
+User 120555 AUC after training: 0.7541305046608807
+User 120555 improves AUC. Keeping the model.
+Training on enhanced user 22888 1/20 current_auc = 0.7541305046608807
+User 22888 AUC after training: 0.7540983606557377
+User 22888 does not improve AUC. Reverting changes.
+Training on enhanced user 50293 2/20 current_auc = 0.7541305046608807
+User 50293 AUC after training: 0.7542912246865959
+User 50293 improves AUC. Keeping the model.
+Training on enhanced user 116785 3/20 current_auc = 0.7542912246865959
+User 116785 AUC after training: 0.7546769527483125
+User 116785 improves AUC. Keeping the model.
+Training on enhanced user 136521 4/20 current_auc = 0.7546769527483125
+User 136521 AUC after training: 0.7514625522340083
+User 136521 does not improve AUC. Reverting changes.
+Training on enhanced user 23286 5/20 current_auc = 0.7546769527483125
+User 23286 AUC after training: 0.753423336547734
+User 23286 does not improve AUC. Reverting changes.
+Training on enhanced user 83318 6/20 current_auc = 0.7546769527483125
+User 83318 AUC after training: 0.7544840887174542
+User 83318 does not improve AUC. Reverting changes.
+Training on enhanced user 8530 7/20 current_auc = 0.7546769527483125
+User 8530 AUC after training: 0.7539697846351655
+User 8530 does not improve AUC. Reverting changes.
+Training on enhanced user 32591 8/20 current_auc = 0.7546769527483125
+User 32591 AUC after training: 0.7548055287688846
+User 32591 improves AUC. Keeping the model.
+Training on enhanced user 76734 9/20 current_auc = 0.7548055287688846
+User 76734 AUC after training: 0.755126968820315
+User 76734 improves AUC. Keeping the model.
+Training on enhanced user 16492 10/20 current_auc = 0.755126968820315
+User 16492 AUC after training: 0.7553198328511733
+User 16492 improves AUC. Keeping the model.
+Training on enhanced user 119583 11/20 current_auc = 0.7553198328511733
+User 119583 AUC after training: 0.7554484088717455
+User 119583 improves AUC. Keeping the model.
+Training on enhanced user 37476 12/20 current_auc = 0.7554484088717455
+User 37476 AUC after training: 0.7553841208614593
+User 37476 does not improve AUC. Reverting changes.
+Training on enhanced user 35809 13/20 current_auc = 0.7554484088717455
+User 35809 AUC after training: 0.7557698489231759
+User 35809 improves AUC. Keeping the model.
+Training on enhanced user 12629 14/20 current_auc = 0.7557698489231759
+User 12629 AUC after training: 0.7557698489231758
+User 12629 does not improve AUC. Reverting changes.
+Training on enhanced user 124045 15/20 current_auc = 0.7557698489231759
+User 124045 AUC after training: 0.755930568948891
+User 124045 improves AUC. Keeping the model.
+Training on enhanced user 101565 16/20 current_auc = 0.755930568948891
+User 101565 AUC after training: 0.7569270331083253
+User 101565 improves AUC. Keeping the model.
+Training on enhanced user 13985 17/20 current_auc = 0.7569270331083253
+User 13985 AUC after training: 0.7569270331083253
+User 13985 does not improve AUC. Reverting changes.
+Training on enhanced user 22575 18/20 current_auc = 0.7569270331083253
+User 22575 AUC after training: 0.7569913211186113
+User 22575 improves AUC. Keeping the model.
+Training on enhanced user 80909 19/20 current_auc = 0.7569913211186113
+User 80909 AUC after training: 0.7563484410157506
+User 80909 does not improve AUC. Reverting changes.
+文件已保存为 /home/chao/workspace/MPDA-implementation/log/transfer_movielens_ncf_50_random/2.xlsx
+[2024-12-02 14:37:59.869353] start test user 208 2/6
+test.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:00.396526] start test user 208 2/6 recall augumented users by random, augumented_users = [21860, 47027, 103595, 92855, 81319, 125586, 72208, 75490, 44138, 41261, 10622, 21991, 84714, 128761, 85676, 63696, 1981, 89429, 10932, 100993]
+[2024-12-02 14:38:00.442746] user = 208 Cloud 2/6
+[2024-12-02 14:38:00.528001] user = 208 Local 2/6
+[2024-12-02 14:38:00.944424] user = 208 Local+ 2/6
+test.py:115: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:02.548767] user = 208 MPDA- 2/6
+test.py:126: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+test.py:131: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  current_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+Initial AUC: 0.6954108391608392
+Training on enhanced user 21860 0/20 current_auc = 0.6954108391608392
+User 21860 AUC after training: 0.6963286713286715
+User 21860 improves AUC. Keeping the model.
+Training on enhanced user 47027 1/20 current_auc = 0.6963286713286715
+User 47027 AUC after training: 0.6958041958041958
+User 47027 does not improve AUC. Reverting changes.
+Training on enhanced user 103595 2/20 current_auc = 0.6963286713286715
+User 103595 AUC after training: 0.6962412587412588
+User 103595 does not improve AUC. Reverting changes.
+Training on enhanced user 92855 3/20 current_auc = 0.6963286713286715
+User 92855 AUC after training: 0.695979020979021
+User 92855 does not improve AUC. Reverting changes.
+Training on enhanced user 81319 4/20 current_auc = 0.6963286713286715
+User 81319 AUC after training: 0.6954545454545454
+User 81319 does not improve AUC. Reverting changes.
+Training on enhanced user 125586 5/20 current_auc = 0.6963286713286715
+User 125586 AUC after training: 0.695979020979021
+User 125586 does not improve AUC. Reverting changes.
+Training on enhanced user 72208 6/20 current_auc = 0.6963286713286715
+User 72208 AUC after training: 0.6961538461538462
+User 72208 does not improve AUC. Reverting changes.
+Training on enhanced user 75490 7/20 current_auc = 0.6963286713286715
+User 75490 AUC after training: 0.6954545454545455
+User 75490 does not improve AUC. Reverting changes.
+Training on enhanced user 44138 8/20 current_auc = 0.6963286713286715
+User 44138 AUC after training: 0.693006993006993
+User 44138 does not improve AUC. Reverting changes.
+Training on enhanced user 41261 9/20 current_auc = 0.6963286713286715
+User 41261 AUC after training: 0.6954545454545454
+User 41261 does not improve AUC. Reverting changes.
+Training on enhanced user 10622 10/20 current_auc = 0.6963286713286715
+User 10622 AUC after training: 0.6939685314685314
+User 10622 does not improve AUC. Reverting changes.
+Training on enhanced user 21991 11/20 current_auc = 0.6963286713286715
+User 21991 AUC after training: 0.6956293706293707
+User 21991 does not improve AUC. Reverting changes.
+Training on enhanced user 84714 12/20 current_auc = 0.6963286713286715
+User 84714 AUC after training: 0.6971153846153847
+User 84714 improves AUC. Keeping the model.
+Training on enhanced user 128761 13/20 current_auc = 0.6971153846153847
+User 128761 AUC after training: 0.6965909090909091
+User 128761 does not improve AUC. Reverting changes.
+Training on enhanced user 85676 14/20 current_auc = 0.6971153846153847
+User 85676 AUC after training: 0.6952797202797203
+User 85676 does not improve AUC. Reverting changes.
+Training on enhanced user 63696 15/20 current_auc = 0.6971153846153847
+User 63696 AUC after training: 0.6967657342657342
+User 63696 does not improve AUC. Reverting changes.
+Training on enhanced user 1981 16/20 current_auc = 0.6971153846153847
+User 1981 AUC after training: 0.697465034965035
+User 1981 improves AUC. Keeping the model.
+Training on enhanced user 89429 17/20 current_auc = 0.697465034965035
+User 89429 AUC after training: 0.6961538461538461
+User 89429 does not improve AUC. Reverting changes.
+Training on enhanced user 10932 18/20 current_auc = 0.697465034965035
+User 10932 AUC after training: 0.6969405594405594
+User 10932 does not improve AUC. Reverting changes.
+Training on enhanced user 100993 19/20 current_auc = 0.697465034965035
+User 100993 AUC after training: 0.6985139860139861
+User 100993 improves AUC. Keeping the model.
+文件已保存为 /home/chao/workspace/MPDA-implementation/log/transfer_movielens_ncf_50_random/2.xlsx
+[2024-12-02 14:38:16.572643] start test user 220 3/6
+test.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:17.247272] start test user 220 3/6 recall augumented users by random, augumented_users = [119973, 118586, 49021, 105092, 97138, 54928, 67011, 124769, 14660, 130152, 75986, 20954, 102957, 122830, 74449, 10624, 11306, 135837, 2231, 2326]
+[2024-12-02 14:38:17.261836] user = 220 Cloud 3/6
+[2024-12-02 14:38:17.278324] user = 220 Local 3/6
+[2024-12-02 14:38:17.386112] user = 220 Local+ 3/6
+test.py:115: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:18.414247] user = 220 MPDA- 3/6
+test.py:126: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+test.py:131: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  current_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+Initial AUC: 0.584375
+Training on enhanced user 119973 0/20 current_auc = 0.584375
+User 119973 AUC after training: 0.58125
+User 119973 does not improve AUC. Reverting changes.
+Training on enhanced user 118586 1/20 current_auc = 0.584375
+User 118586 AUC after training: 0.584375
+User 118586 does not improve AUC. Reverting changes.
+Training on enhanced user 49021 2/20 current_auc = 0.584375
+User 49021 AUC after training: 0.5874999999999999
+User 49021 improves AUC. Keeping the model.
+Training on enhanced user 105092 3/20 current_auc = 0.5874999999999999
+User 105092 AUC after training: 0.584375
+User 105092 does not improve AUC. Reverting changes.
+Training on enhanced user 97138 4/20 current_auc = 0.5874999999999999
+User 97138 AUC after training: 0.590625
+User 97138 improves AUC. Keeping the model.
+Training on enhanced user 54928 5/20 current_auc = 0.590625
+User 54928 AUC after training: 0.584375
+User 54928 does not improve AUC. Reverting changes.
+Training on enhanced user 67011 6/20 current_auc = 0.590625
+User 67011 AUC after training: 0.5874999999999999
+User 67011 does not improve AUC. Reverting changes.
+Training on enhanced user 124769 7/20 current_auc = 0.590625
+User 124769 AUC after training: 0.584375
+User 124769 does not improve AUC. Reverting changes.
+Training on enhanced user 14660 8/20 current_auc = 0.590625
+User 14660 AUC after training: 0.5875
+User 14660 does not improve AUC. Reverting changes.
+Training on enhanced user 130152 9/20 current_auc = 0.590625
+User 130152 AUC after training: 0.590625
+User 130152 does not improve AUC. Reverting changes.
+Training on enhanced user 75986 10/20 current_auc = 0.590625
+User 75986 AUC after training: 0.584375
+User 75986 does not improve AUC. Reverting changes.
+Training on enhanced user 20954 11/20 current_auc = 0.590625
+User 20954 AUC after training: 0.5875
+User 20954 does not improve AUC. Reverting changes.
+Training on enhanced user 102957 12/20 current_auc = 0.590625
+User 102957 AUC after training: 0.5875
+User 102957 does not improve AUC. Reverting changes.
+Training on enhanced user 122830 13/20 current_auc = 0.590625
+User 122830 AUC after training: 0.590625
+User 122830 does not improve AUC. Reverting changes.
+Training on enhanced user 74449 14/20 current_auc = 0.590625
+User 74449 AUC after training: 0.5874999999999999
+User 74449 does not improve AUC. Reverting changes.
+Training on enhanced user 10624 15/20 current_auc = 0.590625
+User 10624 AUC after training: 0.590625
+User 10624 does not improve AUC. Reverting changes.
+Training on enhanced user 11306 16/20 current_auc = 0.590625
+User 11306 AUC after training: 0.5875
+User 11306 does not improve AUC. Reverting changes.
+Training on enhanced user 135837 17/20 current_auc = 0.590625
+User 135837 AUC after training: 0.590625
+User 135837 does not improve AUC. Reverting changes.
+Training on enhanced user 2231 18/20 current_auc = 0.590625
+User 2231 AUC after training: 0.584375
+User 2231 does not improve AUC. Reverting changes.
+Training on enhanced user 2326 19/20 current_auc = 0.590625
+User 2326 AUC after training: 0.584375
+User 2326 does not improve AUC. Reverting changes.
+文件已保存为 /home/chao/workspace/MPDA-implementation/log/transfer_movielens_ncf_50_random/2.xlsx
+[2024-12-02 14:38:30.131110] start test user 258 4/6
+test.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:30.538995] start test user 258 4/6 recall augumented users by random, augumented_users = [36943, 26115, 55768, 49141, 70439, 123849, 102245, 108530, 56505, 64906, 64085, 81038, 93583, 86699, 83284, 136976, 110953, 124225, 6147, 51014]
+[2024-12-02 14:38:30.553443] user = 258 Cloud 4/6
+[2024-12-02 14:38:30.562851] user = 258 Local 4/6
+[2024-12-02 14:38:30.679398] user = 258 Local+ 4/6
+test.py:115: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:32.070395] user = 258 MPDA- 4/6
+test.py:126: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+test.py:131: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  current_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+Initial AUC: 0.6166666666666667
+Training on enhanced user 36943 0/20 current_auc = 0.6166666666666667
+User 36943 AUC after training: 0.6166666666666667
+User 36943 does not improve AUC. Reverting changes.
+Training on enhanced user 26115 1/20 current_auc = 0.6166666666666667
+User 26115 AUC after training: 0.6166666666666667
+User 26115 does not improve AUC. Reverting changes.
+Training on enhanced user 55768 2/20 current_auc = 0.6166666666666667
+User 55768 AUC after training: 0.6166666666666667
+User 55768 does not improve AUC. Reverting changes.
+Training on enhanced user 49141 3/20 current_auc = 0.6166666666666667
+User 49141 AUC after training: 0.6166666666666667
+User 49141 does not improve AUC. Reverting changes.
+Training on enhanced user 70439 4/20 current_auc = 0.6166666666666667
+User 70439 AUC after training: 0.6166666666666667
+User 70439 does not improve AUC. Reverting changes.
+Training on enhanced user 123849 5/20 current_auc = 0.6166666666666667
+User 123849 AUC after training: 0.6166666666666667
+User 123849 does not improve AUC. Reverting changes.
+Training on enhanced user 102245 6/20 current_auc = 0.6166666666666667
+User 102245 AUC after training: 0.6166666666666667
+User 102245 does not improve AUC. Reverting changes.
+Training on enhanced user 108530 7/20 current_auc = 0.6166666666666667
+User 108530 AUC after training: 0.6166666666666667
+User 108530 does not improve AUC. Reverting changes.
+Training on enhanced user 56505 8/20 current_auc = 0.6166666666666667
+User 56505 AUC after training: 0.6166666666666667
+User 56505 does not improve AUC. Reverting changes.
+Training on enhanced user 64906 9/20 current_auc = 0.6166666666666667
+User 64906 AUC after training: 0.6166666666666667
+User 64906 does not improve AUC. Reverting changes.
+Training on enhanced user 64085 10/20 current_auc = 0.6166666666666667
+User 64085 AUC after training: 0.6166666666666667
+User 64085 does not improve AUC. Reverting changes.
+Training on enhanced user 81038 11/20 current_auc = 0.6166666666666667
+User 81038 AUC after training: 0.6166666666666667
+User 81038 does not improve AUC. Reverting changes.
+Training on enhanced user 93583 12/20 current_auc = 0.6166666666666667
+User 93583 AUC after training: 0.6166666666666667
+User 93583 does not improve AUC. Reverting changes.
+Training on enhanced user 86699 13/20 current_auc = 0.6166666666666667
+User 86699 AUC after training: 0.6166666666666667
+User 86699 does not improve AUC. Reverting changes.
+Training on enhanced user 83284 14/20 current_auc = 0.6166666666666667
+User 83284 AUC after training: 0.6166666666666667
+User 83284 does not improve AUC. Reverting changes.
+Training on enhanced user 136976 15/20 current_auc = 0.6166666666666667
+User 136976 AUC after training: 0.6166666666666667
+User 136976 does not improve AUC. Reverting changes.
+Training on enhanced user 110953 16/20 current_auc = 0.6166666666666667
+User 110953 AUC after training: 0.6166666666666667
+User 110953 does not improve AUC. Reverting changes.
+Training on enhanced user 124225 17/20 current_auc = 0.6166666666666667
+User 124225 AUC after training: 0.6166666666666667
+User 124225 does not improve AUC. Reverting changes.
+Training on enhanced user 6147 18/20 current_auc = 0.6166666666666667
+User 6147 AUC after training: 0.5833333333333333
+User 6147 does not improve AUC. Reverting changes.
+Training on enhanced user 51014 19/20 current_auc = 0.6166666666666667
+User 51014 AUC after training: 0.6166666666666667
+User 51014 does not improve AUC. Reverting changes.
+文件已保存为 /home/chao/workspace/MPDA-implementation/log/transfer_movielens_ncf_50_random/2.xlsx
+[2024-12-02 14:38:46.427355] start test user 271 5/6
+test.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:47.139570] start test user 271 5/6 recall augumented users by random, augumented_users = [11632, 122460, 37128, 49193, 61636, 14993, 122214, 126736, 134001, 80318, 21453, 109196, 9558, 59535, 48055, 133877, 132440, 74749, 82970, 17790]
+[2024-12-02 14:38:47.184409] user = 271 Cloud 5/6
+[2024-12-02 14:38:47.209891] user = 271 Local 5/6
+[2024-12-02 14:38:47.412008] user = 271 Local+ 5/6
+test.py:115: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+[2024-12-02 14:38:48.689702] user = 271 MPDA- 5/6
+test.py:126: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  init_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+test.py:131: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  current_model.load_state_dict(torch.load(utils.get_init_model_path('NCF')))
+Initial AUC: 0.6118340163934426
+Training on enhanced user 11632 0/20 current_auc = 0.6118340163934426
+User 11632 AUC after training: 0.6115266393442622
+User 11632 does not improve AUC. Reverting changes.
+Training on enhanced user 122460 1/20 current_auc = 0.6118340163934426
+User 122460 AUC after training: 0.6123463114754099
+User 122460 improves AUC. Keeping the model.
+Training on enhanced user 37128 2/20 current_auc = 0.6123463114754099
+User 37128 AUC after training: 0.6113217213114753
+User 37128 does not improve AUC. Reverting changes.
+Training on enhanced user 49193 3/20 current_auc = 0.6123463114754099
+User 49193 AUC after training: 0.6111168032786884
+User 49193 does not improve AUC. Reverting changes.
+Training on enhanced user 61636 4/20 current_auc = 0.6123463114754099
+User 61636 AUC after training: 0.6123463114754097
+User 61636 does not improve AUC. Reverting changes.
+Training on enhanced user 14993 5/20 current_auc = 0.6123463114754099
+User 14993 AUC after training: 0.6113217213114754
+User 14993 does not improve AUC. Reverting changes.
+Training on enhanced user 122214 6/20 current_auc = 0.6123463114754099
+User 122214 AUC after training: 0.6117315573770492
+User 122214 does not improve AUC. Reverting changes.
+Training on enhanced user 126736 7/20 current_auc = 0.6123463114754099
+User 126736 AUC after training: 0.6123463114754099
+User 126736 does not improve AUC. Reverting changes.
+Training on enhanced user 134001 8/20 current_auc = 0.6123463114754099
+User 134001 AUC after training: 0.6118340163934426
+User 134001 does not improve AUC. Reverting changes.
+Training on enhanced user 80318 9/20 current_auc = 0.6123463114754099
+User 80318 AUC after training: 0.6123463114754099
+User 80318 does not improve AUC. Reverting changes.
+Training on enhanced user 21453 10/20 current_auc = 0.6123463114754099
+User 21453 AUC after training: 0.6114241803278688
+User 21453 does not improve AUC. Reverting changes.
+Training on enhanced user 109196 11/20 current_auc = 0.6123463114754099
+User 109196 AUC after training: 0.6108094262295083
+User 109196 does not improve AUC. Reverting changes.
+Training on enhanced user 9558 12/20 current_auc = 0.6123463114754099
+User 9558 AUC after training: 0.6118340163934426
+User 9558 does not improve AUC. Reverting changes.
+Training on enhanced user 59535 13/20 current_auc = 0.6123463114754099
+User 59535 AUC after training: 0.6118340163934426
+User 59535 does not improve AUC. Reverting changes.
+Training on enhanced user 48055 14/20 current_auc = 0.6123463114754099
+User 48055 AUC after training: 0.6127561475409835
+User 48055 improves AUC. Keeping the model.
+Training on enhanced user 133877 15/20 current_auc = 0.6127561475409835
+User 133877 AUC after training: 0.6124487704918032
+User 133877 does not improve AUC. Reverting changes.
+Training on enhanced user 132440 16/20 current_auc = 0.6127561475409835
+User 132440 AUC after training: 0.6123463114754097
+User 132440 does not improve AUC. Reverting changes.
+Training on enhanced user 74749 17/20 current_auc = 0.6127561475409835
+User 74749 AUC after training: 0.6127561475409836
+User 74749 improves AUC. Keeping the model.
+Training on enhanced user 82970 18/20 current_auc = 0.6127561475409836
+User 82970 AUC after training: 0.6124487704918032
+User 82970 does not improve AUC. Reverting changes.
+Training on enhanced user 17790 19/20 current_auc = 0.6127561475409836
+User 17790 AUC after training: 0.6123463114754097
+User 17790 does not improve AUC. Reverting changes.
+文件已保存为 /home/chao/workspace/MPDA-implementation/log/transfer_movielens_ncf_50_random/2.xlsx
